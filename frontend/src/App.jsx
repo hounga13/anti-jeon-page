@@ -8,7 +8,8 @@ function App() {
 
   useEffect(() => {
     // In production, this would fetch from the public folder or an API
-    fetch('/analysis.json')
+    // Use import.meta.env.BASE_URL to handle the subpath deployment correctly
+    fetch(`${import.meta.env.BASE_URL}analysis.json`)
       .then(res => {
           if (!res.ok) {
               throw new Error("Failed to fetch data");

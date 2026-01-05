@@ -21,9 +21,8 @@ logger = logging.getLogger(__name__)
 # but list request needs ID.
 # I will use a known ID for "Jeon In-gu" if I can find it, otherwise I'll use the ID from the requirements context if available.
 # The requirements mention "@moneydo".
-# Channel ID for @moneydo is UCj-X9Jd_6g_Q_b_f_z_y_x (Not real, but let's assume we use search or user provides it).
-# I'll stick to a placeholder that works with the mock or needs replacement.
-CHANNEL_ID = "UC..."
+# Channel ID for @moneydo is UCznImSIaxZR7fdLCICLdgaQ (Found via RSS feed link)
+CHANNEL_ID = "UCznImSIaxZR7fdLCICLdgaQ"
 
 DATA_FILE_PATH = os.path.join(os.path.dirname(__file__), '../data/analysis.json')
 PUBLIC_DATA_PATH = os.path.join(os.path.dirname(__file__), '../frontend/public/analysis.json')
