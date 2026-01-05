@@ -25,17 +25,17 @@ def get_latest_videos(api_key, channel_id, max_results=5):
         return [
             {
                 "id": "mock_video_1",
-                "title": "Stock Market Crash Imminent! Sell Everything!",
+                "title": "주식 시장 대폭락 임박! 지금 당장 다 파세요!",
                 "publishedAt": datetime.now().isoformat(),
                 "thumbnail": "https://placehold.co/600x400/png",
-                "description": "The indicators are clear. The market is about to collapse."
+                "description": "모든 지표가 하락을 가리키고 있습니다. 시장 붕괴가 시작됩니다."
             },
             {
                 "id": "mock_video_2",
-                "title": "Real Estate Bubble Bursting Soon?",
+                "title": "부동산 거품 드디어 터지나? 영끌족의 최후",
                 "publishedAt": datetime.now().isoformat(),
                 "thumbnail": "https://placehold.co/600x400/png",
-                "description": "House prices are too high."
+                "description": "집값 거품이 너무 심각합니다. 지금 사면 지옥을 맛보게 될 것입니다."
             }
         ]
 

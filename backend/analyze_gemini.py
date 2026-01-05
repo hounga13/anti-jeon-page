@@ -36,33 +36,35 @@ def analyze_video_content(title, transcript_text, thumbnail_url, api_configured)
             "jeon_sentiment": "Negative",
             "oracle_advice": "STRONG BUY",
             "confidence": 0.85,
-            "summary": f"Video '{title}' suggests a downturn.",
-            "counter_argument": "Historical trends indicate a rebound is imminent despite the fearmongering.",
-            "assets": ["Stock Market", "Real Estate"],
+            "summary": f"'{title}' 영상은 시장 하락을 강하게 경고하고 있습니다.",
+            "counter_argument": "모두가 공포에 질려 팔 때가 바로 기회입니다. 과거 데이터상 지금은 저점 매수의 적기입니다.",
+            "assets": ["주식 시장", "부동산"],
             "jeon_index_score": 90, # Fear index
-            "face_analysis": "Anxious expression detected."
+            "face_analysis": "불안한 표정이 감지됨"
         }
 
     # Prompt Engineering
     system_prompt = """
-    You are 'The Anti-Jeon Oracle'. Your job is to analyze the content of a financial YouTube video by 'Jeon In-gu' and generate investment advice that is the EXACT OPPOSITE of his conclusion.
+    You are 'The Anti-Jeon Oracle' (청개구리 신탁). Your job is to analyze the content of a financial YouTube video by 'Jeon In-gu' and generate investment advice that is the EXACT OPPOSITE of his conclusion.
     His predictions are famously known as a 'contra-indicator'.
 
     Analyze the provided video title and transcript.
     1. Identify the key assets mentioned (e.g., Samsung Electronics, Tesla, Gold, Real Estate).
     2. Determine Jeon's sentiment (Positive/Buy or Negative/Sell).
     3. Generate the 'True Oracle Advice' (Reverse of Jeon's sentiment).
-    4. Provide a sarcastic yet plausible financial reasoning for the reversal.
+    4. Provide a sarcastic yet plausible financial reasoning for the reversal in KOREAN.
     5. Assign a 'Confidence Score' (0.0 to 1.0). If he uses strong words like 'Crash', 'Forever', 'Guarantee', increase the confidence of the reversal.
+
+    IMPORTANT: The 'summary', 'counter_argument', and 'assets' MUST be in KOREAN.
 
     Output JSON format:
     {
         "jeon_sentiment": "Positive" | "Negative" | "Neutral",
         "oracle_advice": "BUY" | "SELL" | "HOLD",
         "confidence": float,
-        "summary": "Brief summary of his point",
-        "counter_argument": "Why we should do the opposite",
-        "assets": ["Asset1", "Asset2"],
+        "summary": "Brief summary of his point (in Korean)",
+        "counter_argument": "Why we should do the opposite (in Korean)",
+        "assets": ["Asset1 (Korean)", "Asset2 (Korean)"],
         "jeon_index_score": int (0-100, where 100 is extreme hype/fear warranting a strong reversal)
     }
     """
