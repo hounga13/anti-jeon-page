@@ -1,0 +1,48 @@
+{
+  "last_updated": "2026-01-05T02:27:38.357048",
+  "jeon_index": {
+    "score": 90,
+    "sentiment": "Negative",
+    "description": "Video 'Stock Market Crash Imminent! Sell Everything!' suggests a downturn."
+  },
+  "videos": [
+    {
+      "id": "mock_video_1",
+      "title": "Stock Market Crash Imminent! Sell Everything!",
+      "publishedAt": "2026-01-05T02:27:38.356789",
+      "thumbnail": "https://placehold.co/600x400/png",
+      "description": "The indicators are clear. The market is about to collapse.",
+      "jeon_sentiment": "Negative",
+      "oracle_advice": "STRONG BUY",
+      "confidence": 0.85,
+      "summary": "Video 'Stock Market Crash Imminent! Sell Everything!' suggests a downturn.",
+      "counter_argument": "Historical trends indicate a rebound is imminent despite the fearmongering.",
+      "assets": [
+        "Stock Market",
+        "Real Estate"
+      ],
+      "jeon_index_score": 90,
+      "face_analysis": "Anxious expression detected.",
+      "transcript_snippet": "The indicators are clear. The market is about to collapse...."
+    },
+    {
+      "id": "mock_video_2",
+      "title": "Real Estate Bubble Bursting Soon?",
+      "publishedAt": "2026-01-05T02:27:38.356802",
+      "thumbnail": "https://placehold.co/600x400/png",
+      "description": "House prices are too high.",
+      "jeon_sentiment": "Negative",
+      "oracle_advice": "STRONG BUY",
+      "confidence": 0.85,
+      "summary": "Video 'Real Estate Bubble Bursting Soon?' suggests a downturn.",
+      "counter_argument": "Historical trends indicate a rebound is imminent despite the fearmongering.",
+      "assets": [
+        "Stock Market",
+        "Real Estate"
+      ],
+      "jeon_index_score": 90,
+      "face_analysis": "Anxious expression detected.",
+      "transcript_snippet": "House prices are too high...."
+    }
+  ]
+}
