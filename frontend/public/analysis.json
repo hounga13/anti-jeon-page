@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-05T12:48:44.748090",
+  "last_updated": "2026-01-05T13:38:42.489903",
   "jeon_index": {
     "score": 90,
     "sentiment": "Negative",
@@ -9,7 +9,7 @@
     {
       "id": "mock_video_1",
       "title": "주식 시장 대폭락 임박! 지금 당장 다 파세요!",
-      "publishedAt": "2026-01-05T12:48:44.747875",
+      "publishedAt": "2026-01-05T13:38:42.489738",
       "thumbnail": "https://placehold.co/600x400/png",
       "description": "모든 지표가 하락을 가리키고 있습니다. 시장 붕괴가 시작됩니다.",
       "jeon_sentiment": "Negative",
@@ -28,7 +28,7 @@
     {
       "id": "mock_video_2",
       "title": "부동산 거품 드디어 터지나? 영끌족의 최후",
-      "publishedAt": "2026-01-05T12:48:44.747884",
+      "publishedAt": "2026-01-05T13:38:42.489748",
       "thumbnail": "https://placehold.co/600x400/png",
       "description": "집값 거품이 너무 심각합니다. 지금 사면 지옥을 맛보게 될 것입니다.",
       "jeon_sentiment": "Negative",
