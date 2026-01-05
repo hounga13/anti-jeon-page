@@ -5,13 +5,14 @@ on:
     - cron: '0 */6 * * *' # Run every 6 hours
   workflow_dispatch: # Allow manual trigger
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Needed to commit changes
-      pages: write
-      id-token: write
 
     steps:
       - name: Checkout repository
